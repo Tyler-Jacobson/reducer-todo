@@ -1,86 +1,68 @@
-# Module Project: The Reducer Pattern - Reducer Todo
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project allows you to practice the concepts and techniques learned in this module and apply them in a concrete project. This module explored the reducer pattern. During the module, you studied what immutability is, what reducers, actions and dispatch are, and how to use the reducer hook. In your project you will demonstrate proficiency of these subjects and principles by creating an application using each of these.
+## Available Scripts
 
-### Commits
+In the project directory, you can run:
 
-Commit your code regularly and meaningfully. This helps both you and your team lead in case you ever need to return to old code for any number of reasons.
+### `npm start`
 
-## Introduction
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-In this project, you build an app that let's you display a todo list from reducer state, and update todo items as completed and clear completed todos from the list by dispatching different actions.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-## Instructions
+### `npm test`
 
-### Task 1: Project Set Up
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal.
-- [ ] CD into the project base directory `cd reducer-todo`.
-- [ ] Create a new react app running `npx create-react-app todo --use-npm`.
-- [ ] CD into the react app directory `cd todo`.
-- [ ] Start up the app using `npm start`.
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+### `npm run build`
 
-### Task 2a: Minimum Viable Product
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Set an initial state value through a reducer and render a list of todos from that state
-2. Add a form that dispatches an "ADD_TODO" action to be able to add a todo item to your list
-3. Build a function that let's you mark todo items as completed when you click on them
-4. Build a function that let's you clear completed todos when you click on a "Clear Completed" button
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-#### Build a simple reducer and initial state
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- In a folder called `reducers` add a reducer file and build out a simple reducer with just a default return for now
-- In the same file, build your initial state object that has a list of todos with the following shape:
+### `npm run eject`
 
-```js
-{
-  item: 'Learn about reducers',
-  completed: false,
-  id: 3892987589
-}
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-- Export both the reducer and the initial state object
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-#### Set up state in your component
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You get to choose how you want to set up your components. Please don't just do this all inside App. I know it is a small and simple project, but you will do yourself a great service by setting your app up as if it were going to be a larger application
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- Using the `reducer` hook, set up state in your component. Think about what you'll need in order to use the reducer hook, and think about what it returns.
-- Now render your list of todos from your reducer in your app
+## Learn More
 
-#### Adding todos
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Build a form to add todos to your list
-- Build a function that will dispatch an action to add a new todo
-- Write the `case` in your reducer for adding a todo (You can create a unique id with `new Date()`)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-#### Toggle the completed field
+### Code Splitting
 
-- Build a function that will dispatch an action to toggle a todo's completed field
-- Invoke this new function when you click on a todo
-- Style your todo to somehow show that it is completed (be creative here!)
-- Write the `case` in your reducer for toggling the completed property
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-#### Clearing completed todos
+### Analyzing the Bundle Size
 
-- Build a function that will dispatch an action to filter out any completed todos
-- Invoke this new function when you click on a "Clear completed" button
-- Write the `case` in your reducer for filtering completed todos
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Task 3: Stretch Problems
+### Making a Progressive Web App
 
-After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-- Add the moment library to show in "human speak" when a todo was completed
-- Add a property on the todos for when a todo should be completed by. Then display that a todo is "overdue" if it has not been completed by its due date
-- Add "tags" to your todos, and display them with your todo list
-- Have fun with the styling. Make this something you'd be proud to show off!
+### Advanced Configuration
 
-## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
