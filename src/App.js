@@ -30,8 +30,7 @@ function App() {
         </button>
         {todoListState.toDo.map((item) => {
           return (
-            <div>
-              <p
+              <div
                 onClick={() =>
                   dispatch({ type: "CROSSOUT_TODO", payload: item.id })
                 }
@@ -39,10 +38,9 @@ function App() {
                 {item.complete ? (
                   <p className="strike">{item.task}</p>
                 ) : (
-                  item.task
+                  <p>{item.task}</p>
                 )}
-              </p>
-            </div>
+              </div>
           );
         })}
         <br />
